@@ -9,6 +9,14 @@
     "communication": "表达直接，不喜欢复杂猜测。",
     "strengths": ["勇敢", "真诚", "有行动力"],
     "weaknesses": ["容易冲动", "耐心不足"],
+    "relationship": {
+      "gift": "会用直接而热烈的行动推进关系",
+      "emotionalNeed": "及时而明确的回应，确认自己的热情被接住",
+      "pressureResponse": "着急时容易先行动、后倾听，语气也会变得更直",
+      "repair": "先把真实需求说清楚，再给彼此一点反应时间",
+      "dateStyle": "新鲜感和一点挑战",
+      "dateIdea": "攀岩、卡丁车或临时出发的小旅行"
+    },
     "icon": "zodiac_aries"
   },
   {
@@ -21,6 +29,14 @@
     "communication": "表达谨慎而踏实，需要时间建立信任。",
     "strengths": ["可靠", "有耐心", "忠诚"],
     "weaknesses": ["比较固执", "适应变化较慢"],
+    "relationship": {
+      "gift": "擅长把喜欢落实为稳定陪伴和可靠行动",
+      "emotionalNeed": "可预期的投入、踏实的承诺和不被催促的节奏",
+      "pressureResponse": "感到不安时容易更坚持原有做法，不愿立刻改变",
+      "repair": "用具体安排建立安全感，同时为变化留一个小入口",
+      "dateStyle": "松弛、好吃又有质感",
+      "dateIdea": "一起做饭、逛市集或寻找一家惦记很久的小店"
+    },
     "icon": "zodiac_taurus"
   },
   {
@@ -33,6 +49,14 @@
     "communication": "思维跳跃，擅长用轻松的方式打开话题。",
     "strengths": ["机智", "适应力强", "表达能力好"],
     "weaknesses": ["容易分心", "情绪变化较快"],
+    "relationship": {
+      "gift": "会用好奇心、分享欲和轻松交流让关系保持新鲜",
+      "emotionalNeed": "持续的思想交流，以及能自由表达变化的空间",
+      "pressureResponse": "压力下可能快速切换话题，用轻松掩盖真正情绪",
+      "repair": "先停下来讲清此刻感受，再一起讨论新的可能",
+      "dateStyle": "边玩边聊的探索感",
+      "dateIdea": "城市漫游、主题展览或一场能不断互动的桌游"
+    },
     "icon": "zodiac_gemini"
   },
   {
@@ -45,6 +69,14 @@
     "communication": "重视情绪氛围，希望对方理解没有说出口的感受。",
     "strengths": ["体贴", "有同理心", "重感情"],
     "weaknesses": ["容易多想", "缺乏安全感"],
+    "relationship": {
+      "gift": "擅长用照顾、记得细节和温柔陪伴营造归属感",
+      "emotionalNeed": "稳定的情绪回应，以及感受被认真看见的安全感",
+      "pressureResponse": "受伤时容易把情绪收回去，期待对方主动察觉",
+      "repair": "把暗示换成明确请求，也给对方解释和靠近的机会",
+      "dateStyle": "安静、私密和有温度",
+      "dateIdea": "一起做饭、看老电影或去一处不赶时间的海边"
+    },
     "icon": "zodiac_cancer"
   },
   {
@@ -57,6 +89,14 @@
     "communication": "表达鲜明坦率，希望获得积极而真诚的回应。",
     "strengths": ["慷慨", "有担当", "积极乐观"],
     "weaknesses": ["自尊心较强", "偶尔比较强势"],
+    "relationship": {
+      "gift": "愿意大方表达欣赏，用热情和担当给关系带来光亮",
+      "emotionalNeed": "真诚的肯定、被重视的仪式感和清晰回应",
+      "pressureResponse": "自尊受伤时容易变得强势，或用姿态掩饰在意",
+      "repair": "先给彼此尊重，再坦白真正介意的是什么",
+      "dateStyle": "有仪式感和共同记忆",
+      "dateIdea": "精心安排的晚餐、演出或值得拍照纪念的一日体验"
+    },
     "icon": "zodiac_leo"
   },
   {
@@ -69,6 +109,14 @@
     "communication": "逻辑清晰，重视具体事实和可执行的改善方式。",
     "strengths": ["认真", "有责任感", "观察细致"],
     "weaknesses": ["容易挑剔", "有时过度担忧"],
+    "relationship": {
+      "gift": "会用解决问题、照顾细节和持续改进表达认真",
+      "emotionalNeed": "自己的用心被理解，以及清楚、可靠、能落地的回应",
+      "pressureResponse": "焦虑时容易反复分析细节，关心听起来像挑剔",
+      "repair": "先肯定彼此的用心，再一次只解决一个具体问题",
+      "dateStyle": "舒服、有内容又安排得当",
+      "dateIdea": "逛书店与展览、一起做手作或规划一条精致散步路线"
+    },
     "icon": "zodiac_virgo"
   },
   {
@@ -81,6 +129,14 @@
     "communication": "善于倾听和协调，会尽量避免激烈冲突。",
     "strengths": ["善解人意", "有审美", "擅长协调"],
     "weaknesses": ["容易犹豫", "有时回避冲突"],
+    "relationship": {
+      "gift": "擅长营造平等、舒服又有美感的相处氛围",
+      "emotionalNeed": "被尊重的选择权、温和沟通和关系中的公平感",
+      "pressureResponse": "担心冲突时容易绕开重点，把不满留到后来",
+      "repair": "用温和但明确的方式做选择，不让沉默代替答案",
+      "dateStyle": "浪漫、好看和从容交流",
+      "dateIdea": "有氛围感的餐厅、艺术展或可以慢慢散步的街区"
+    },
     "icon": "zodiac_libra"
   },
   {
@@ -93,6 +149,14 @@
     "communication": "不轻易表露全部感受，但会敏锐观察对方的态度。",
     "strengths": ["坚定", "忠诚", "有洞察力"],
     "weaknesses": ["防备心较强", "容易占有欲过重"],
+    "relationship": {
+      "gift": "会投入深度关注和忠诚，让关系拥有强烈连接感",
+      "emotionalNeed": "坦诚、专一和经得起验证的深度信任",
+      "pressureResponse": "缺乏安全感时容易试探、沉默观察或加强控制",
+      "repair": "直接说出不安，少用试探来验证对方",
+      "dateStyle": "专注、私密和有情绪浓度",
+      "dateIdea": "夜晚散步、双人密室或一场能认真聊到很晚的约会"
+    },
     "icon": "zodiac_scorpio"
   },
   {
@@ -105,6 +169,14 @@
     "communication": "坦率幽默，愿意分享想法，但不喜欢被过度约束。",
     "strengths": ["开朗", "真诚", "视野开阔"],
     "weaknesses": ["不够细心", "容易忽略承诺细节"],
+    "relationship": {
+      "gift": "会用乐观、坦率和共同探索为关系注入活力",
+      "emotionalNeed": "真诚交流、共同成长，以及不被过度约束的空间",
+      "pressureResponse": "感到受限时容易抽离，或急着逃开严肃讨论",
+      "repair": "保留一点空间，但约定明确时间回来把问题谈完",
+      "dateStyle": "自由、户外和未知体验",
+      "dateIdea": "徒步、短途旅行或临时挑选一个从没去过的地方"
+    },
     "icon": "zodiac_sagittarius"
   },
   {
@@ -117,6 +189,14 @@
     "communication": "表达克制务实，更习惯讨论现实问题和未来安排。",
     "strengths": ["可靠", "有毅力", "责任心强"],
     "weaknesses": ["不善于示弱", "有时过于严肃"],
+    "relationship": {
+      "gift": "擅长用责任、规划和长期投入给关系稳定支点",
+      "emotionalNeed": "可信赖的承诺、共同目标，以及自己的努力被理解",
+      "pressureResponse": "压力大时容易更沉默务实，把情绪放到最后",
+      "repair": "除了讨论解决方案，也说出自己的感受和需要",
+      "dateStyle": "踏实、耐看和有共同目标",
+      "dateIdea": "一起爬山、规划周末行程或完成一件有成果的小计划"
+    },
     "icon": "zodiac_capricorn"
   },
   {
@@ -129,6 +209,14 @@
     "communication": "喜欢讨论新观点，表达理性并尊重彼此边界。",
     "strengths": ["有创造力", "包容", "思想开放"],
     "weaknesses": ["情感表达偏冷静", "有时难以捉摸"],
+    "relationship": {
+      "gift": "会用独特观点、尊重边界和朋友式默契拓宽关系",
+      "emotionalNeed": "精神共鸣、个人空间和不被简单定义的理解",
+      "pressureResponse": "情绪过载时容易退回理性，显得疏离或难以靠近",
+      "repair": "先说明自己需要空间，并给出重新连接的明确时间",
+      "dateStyle": "特别、有趣和没有标准答案",
+      "dateIdea": "科技馆、独立电影、创意市集或一次随机主题挑战"
+    },
     "icon": "zodiac_aquarius"
   },
   {
@@ -141,6 +229,14 @@
     "communication": "表达含蓄而富有情感，希望被耐心倾听和理解。",
     "strengths": ["温柔", "有同理心", "想象力丰富"],
     "weaknesses": ["容易理想化", "边界感有时不足"],
+    "relationship": {
+      "gift": "会用共情、浪漫想象和柔软回应增加情感浓度",
+      "emotionalNeed": "耐心倾听、温柔确认和稳定清晰的边界",
+      "pressureResponse": "失望时容易理想化或回避现实，让情绪越积越多",
+      "repair": "把感受和事实分开说清，也确认彼此真正能做到什么",
+      "dateStyle": "浪漫、松弛和富有想象",
+      "dateIdea": "看展、听现场音乐、去水边散步或一起做一件艺术小作品"
+    },
     "icon": "zodiac_pisces"
   }
 ]

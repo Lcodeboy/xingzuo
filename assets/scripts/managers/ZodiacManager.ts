@@ -1,5 +1,5 @@
 import { _decorator, Component, JsonAsset, resources } from 'cc';
-import type { ZodiacData } from '../types/ZodiacTypes';
+import type { ZodiacData, ZodiacRelationshipProfile } from '../types/ZodiacTypes';
 
 const { ccclass } = _decorator;
 
@@ -126,7 +126,21 @@ export class ZodiacManager extends Component {
             && typeof value.communication === 'string'
             && this.isStringArray(value.strengths)
             && this.isStringArray(value.weaknesses)
+            && this.isRelationshipProfile(value.relationship)
             && typeof value.icon === 'string';
+    }
+
+    private isRelationshipProfile(value: unknown): value is ZodiacRelationshipProfile {
+        if (!this.isRecord(value)) {
+            return false;
+        }
+
+        return this.isNonEmptyString(value.gift)
+            && this.isNonEmptyString(value.emotionalNeed)
+            && this.isNonEmptyString(value.pressureResponse)
+            && this.isNonEmptyString(value.repair)
+            && this.isNonEmptyString(value.dateStyle)
+            && this.isNonEmptyString(value.dateIdea);
     }
 
     private isRecord(value: unknown): value is Record<string, unknown> {
@@ -135,5 +149,9 @@ export class ZodiacManager extends Component {
 
     private isStringArray(value: unknown): value is string[] {
         return Array.isArray(value) && value.every((item) => typeof item === 'string');
+    }
+
+    private isNonEmptyString(value: unknown): value is string {
+        return typeof value === 'string' && value.trim().length > 0;
     }
 }
