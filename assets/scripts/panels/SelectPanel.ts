@@ -3,7 +3,6 @@ import {
     Button,
     Component,
     instantiate,
-    Label,
     Node,
     Prefab,
     tween,
@@ -27,17 +26,11 @@ export class SelectPanel extends Component implements ZodiacSelection {
     @property({ type: Node, tooltip: '男方分区标题节点' })
     public maleTitle: Node | null = null;
 
-    @property({ type: Label, tooltip: '男方当前选择文字' })
-    public maleSelectedLabel: Label | null = null;
-
     @property({ type: Node, tooltip: '男方星座选项容器' })
     public maleGrid: Node | null = null;
 
     @property({ type: Node, tooltip: '女方分区标题节点' })
     public femaleTitle: Node | null = null;
-
-    @property({ type: Label, tooltip: '女方当前选择文字' })
-    public femaleSelectedLabel: Label | null = null;
 
     @property({ type: Node, tooltip: '女方星座选项容器' })
     public femaleGrid: Node | null = null;
@@ -99,14 +92,6 @@ export class SelectPanel extends Component implements ZodiacSelection {
     public resetSelection(): void {
         this.maleZodiacId = '';
         this.femaleZodiacId = '';
-
-        if (this.maleSelectedLabel !== null) {
-            this.maleSelectedLabel.string = '男方：请选择';
-        }
-
-        if (this.femaleSelectedLabel !== null) {
-            this.femaleSelectedLabel.string = '女方：请选择';
-        }
 
         this.setItemsSelected(this.maleItems, '');
         this.setItemsSelected(this.femaleItems, '');
@@ -216,9 +201,6 @@ export class SelectPanel extends Component implements ZodiacSelection {
     private applyMaleSelection(data: ZodiacData): void {
         const selectionWasComplete: boolean = this.isSelectionComplete();
         this.maleZodiacId = data.id;
-        if (this.maleSelectedLabel !== null) {
-            this.maleSelectedLabel.string = `男方：${data.symbol} ${data.name}`;
-        }
         this.setItemsSelected(this.maleItems, data.id);
         this.stopTitleGuide(this.maleTitle);
 
@@ -235,9 +217,6 @@ export class SelectPanel extends Component implements ZodiacSelection {
     private applyFemaleSelection(data: ZodiacData): void {
         const selectionWasComplete: boolean = this.isSelectionComplete();
         this.femaleZodiacId = data.id;
-        if (this.femaleSelectedLabel !== null) {
-            this.femaleSelectedLabel.string = `女方：${data.symbol} ${data.name}`;
-        }
         this.setItemsSelected(this.femaleItems, data.id);
         if (this.maleZodiacId.length > 0) {
             this.stopTitleGuide(this.femaleTitle);

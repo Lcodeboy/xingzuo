@@ -1,18 +1,21 @@
 import {
     _decorator,
     Button,
+    Color,
     Component,
+    Graphics,
     Label,
     Node,
     resources,
     RichText,
+    ScrollView,
     Sprite,
     SpriteFrame,
     tween,
     Tween,
+    UITransform,
     Vec3,
 } from 'cc';
-import { AdManager } from '../managers/AdManager';
 import { GameManager } from '../managers/GameManager';
 import { ShareManager } from '../managers/ShareManager';
 import { ZodiacManager } from '../managers/ZodiacManager';
@@ -78,14 +81,14 @@ export class ResultPanel extends Component {
     @property({ type: RichText, tooltip: '长期发展评分' })
     public futureScore: RichText | null = null;
 
-    @property({ type: Label, tooltip: '关系优势列表' })
-    public advantageLabel: Label | null = null;
+    @property({ type: Label, tooltip: '双方最强默契结论' })
+    public strongestConnectionLabel: Label | null = null;
 
-    @property({ type: Label, tooltip: '相处风险列表' })
-    public riskLabel: Label | null = null;
+    @property({ type: Label, tooltip: '双方最大磨合点结论' })
+    public growthEdgeLabel: Label | null = null;
 
-    @property({ type: Label, tooltip: '恋爱建议列表' })
-    public suggestionLabel: Label | null = null;
+    @property({ type: Label, tooltip: '关系可以先做的第一步' })
+    public firstStepLabel: Label | null = null;
 
     @property({ type: Button, tooltip: '分享结果按钮' })
     public shareButton: Button | null = null;
@@ -96,17 +99,40 @@ export class ResultPanel extends Component {
     @property({ type: Button, tooltip: '重新测试按钮' })
     public retryButton: Button | null = null;
 
-    @property({ type: DetailPanel, tooltip: '激励广告解锁后的完整报告面板' })
+    @property({ type: DetailPanel, tooltip: '完整报告面板' })
     public detailPanel: DetailPanel | null = null;
+
+    @property({ type: ScrollView, tooltip: '结果页纵向滚动区域' })
+    public scrollView: ScrollView | null = null;
+
+    @property({ type: Graphics, tooltip: '顶部裁切柔化层：顶部色带' })
+    public fadeStripTop: Graphics | null = null;
+
+    @property({ type: Graphics, tooltip: '顶部裁切柔化层：中部色带' })
+    public fadeStripMiddle: Graphics | null = null;
+
+    @property({ type: Graphics, tooltip: '顶部裁切柔化层：底部色带' })
+    public fadeStripBottom: Graphics | null = null;
+
+    @property({ type: Graphics, tooltip: '底部固定操作栏半透明背景' })
+    public actionBarBackground: Graphics | null = null;
+
+    @property({ type: Graphics, tooltip: '底部固定操作栏顶部边线' })
+    public actionBarTopLine: Graphics | null = null;
 
     private currentReport: ReportData | null = null;
     private iconRequestId: number = 0;
+
+    protected onLoad(): void {
+        this.drawStaticOverlayLayers();
+    }
 
     protected onEnable(): void {
         this.shareButton?.node.on(Button.EventType.CLICK, this.onShareButtonClick, this);
         this.detailButton?.node.on(Button.EventType.CLICK, this.onDetailButtonClick, this);
         this.retryButton?.node.on(Button.EventType.CLICK, this.onRetryButtonClick, this);
         this.startHeartPulse();
+        this.resetScrollPosition();
 
         if (this.currentReport !== null) {
             this.scoreAnimator?.play(this.currentReport.score);
@@ -119,6 +145,8 @@ export class ResultPanel extends Component {
         this.retryButton?.node.off(Button.EventType.CLICK, this.onRetryButtonClick, this);
         this.iconRequestId += 1;
         this.detailPanel?.hide();
+        this.unschedule(this.scrollToTop);
+        this.scrollView?.stopAutoScroll();
         this.stopHeartPulse();
     }
 
@@ -154,17 +182,9 @@ export class ResultPanel extends Component {
         this.setDimension(this.lifeScore, '生活', dimensions.life);
         this.setDimension(this.futureScore, '未来', dimensions.future);
 
-        if (this.advantageLabel !== null) {
-            this.advantageLabel.string = this.formatList(report.advantages);
-        }
-
-        if (this.riskLabel !== null) {
-            this.riskLabel.string = this.formatList(report.risks);
-        }
-
-        if (this.suggestionLabel !== null) {
-            this.suggestionLabel.string = this.formatList(report.suggestions);
-        }
+        this.setLabel(this.strongestConnectionLabel, report.relationshipInsights.strongestBond);
+        this.setLabel(this.growthEdgeLabel, report.relationshipInsights.biggestChallenge);
+        this.setLabel(this.firstStepLabel, report.relationshipInsights.firstAction);
 
         this.resetIconPlaceholder(report.maleId, this.maleIcon, this.maleIconPlaceholderLabel);
         this.resetIconPlaceholder(report.femaleId, this.femaleIcon, this.femaleIconPlaceholderLabel);
@@ -173,6 +193,7 @@ export class ResultPanel extends Component {
         if (this.node.activeInHierarchy) {
             this.scoreAnimator?.play(report.score);
         }
+        this.resetScrollPosition();
     }
 
     private onShareButtonClick(): void {
@@ -189,20 +210,11 @@ export class ResultPanel extends Component {
             return;
         }
 
-        const report: ReportData = this.currentReport;
-        AdManager.instance.showRewardAd((): void => {
-            if (this.node.activeInHierarchy) {
-                this.detailPanel?.show(report);
-            }
-        });
+        this.detailPanel.show(this.currentReport);
     }
 
     private onRetryButtonClick(): void {
         GameManager.instance.switchState(GameState.START);
-    }
-
-    private formatList(items: readonly string[]): string {
-        return items.map((item) => `• ${item}`).join('\n');
     }
 
     private setLabel(label: Label | null, value: string): void {
@@ -216,6 +228,52 @@ export class ResultPanel extends Component {
             label.string = `<color=#4B3B68><size=25>${name}</size></color>`
                 + `\n<color=#C39142><size=30><b>${value}</b></size></color>`;
         }
+    }
+
+    private resetScrollPosition(): void {
+        this.scrollView?.stopAutoScroll();
+        this.unschedule(this.scrollToTop);
+        if (this.node.activeInHierarchy) {
+            this.scheduleOnce(this.scrollToTop, 0);
+        }
+    }
+
+    private readonly scrollToTop = (): void => {
+        if (this.node.activeInHierarchy) {
+            this.scrollView?.scrollToTop(0);
+        }
+    };
+
+    private drawStaticOverlayLayers(): void {
+        const topFadeColor = new Color(23, 21, 74, 255);
+        this.drawSolidLayer(this.fadeStripTop, topFadeColor);
+        this.drawSolidLayer(this.fadeStripMiddle, topFadeColor);
+        this.drawSolidLayer(this.fadeStripBottom, topFadeColor);
+        this.drawSolidLayer(this.actionBarBackground, new Color(33, 23, 71, 255));
+        this.drawSolidLayer(this.actionBarTopLine, new Color(216, 167, 219, 255));
+    }
+
+    private drawSolidLayer(graphics: Graphics | null, color: Color): void {
+        if (graphics === null) {
+            return;
+        }
+
+        const transform: UITransform | null = graphics.node.getComponent(UITransform);
+        if (transform === null) {
+            return;
+        }
+
+        const width: number = transform.contentSize.width;
+        const height: number = transform.contentSize.height;
+        graphics.clear();
+        graphics.fillColor = color;
+        graphics.rect(
+            -width * transform.anchorPoint.x,
+            -height * transform.anchorPoint.y,
+            width,
+            height,
+        );
+        graphics.fill();
     }
 
     private startHeartPulse(): void {

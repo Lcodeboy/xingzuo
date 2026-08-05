@@ -13,23 +13,23 @@ import type { ReportData } from '../types/ReportTypes';
 
 const { ccclass, property } = _decorator;
 
-/** 激励广告解锁后的完整报告弹层。 */
+/** 完整报告弹层。 */
 @ccclass('DetailPanel')
 export class DetailPanel extends Component {
-    @property({ type: RichText, tooltip: '心动指数详情' })
-    public heartIndexLabel: RichText | null = null;
+    @property({ type: RichText, tooltip: '双方心动来源' })
+    public attractionStoryLabel: RichText | null = null;
 
-    @property({ type: RichText, tooltip: '沟通模式详情' })
-    public communicationLabel: RichText | null = null;
+    @property({ type: RichText, tooltip: '双方爱的表达与情绪需要' })
+    public loveLanguageLabel: RichText | null = null;
 
-    @property({ type: RichText, tooltip: '适合约会方式' })
-    public dateStyleLabel: RichText | null = null;
+    @property({ type: RichText, tooltip: '双方沟通与冲突循环' })
+    public conflictPatternLabel: RichText | null = null;
 
-    @property({ type: RichText, tooltip: '感情升温建议' })
-    public warmingSuggestionLabel: RichText | null = null;
+    @property({ type: RichText, tooltip: '双方相处与约会方式' })
+    public datingGuideLabel: RichText | null = null;
 
-    @property({ type: RichText, tooltip: '长期相处提醒' })
-    public longTermReminderLabel: RichText | null = null;
+    @property({ type: RichText, tooltip: '长期发展条件与行动清单' })
+    public longTermGuideLabel: RichText | null = null;
 
     @property({ type: Button, tooltip: '关闭完整报告按钮' })
     public closeButton: Button | null = null;
@@ -58,45 +58,25 @@ export class DetailPanel extends Component {
     }
 
     public show(report: ReportData): void {
-        const dimensions: ReportData['dimensions'] = report.dimensions;
-
         this.setLabel(
-            this.heartIndexLabel,
-            this.formatItem(
-                '01',
-                `心动指数 ${dimensions.attraction}%`,
-                dimensions.attraction >= 85
-                    ? '彼此容易快速产生吸引，适合主动表达欣赏。'
-                    : '心动需要在真实陪伴中逐步累积。',
-            ),
+            this.attractionStoryLabel,
+            this.formatItem('01', '心动来源', report.detailAnalysis.attractionSource),
         );
         this.setLabel(
-            this.communicationLabel,
-            this.formatItem(
-                '02',
-                `沟通模式 ${dimensions.communication}%`,
-                dimensions.communication >= 80
-                    ? '表达较容易同频，仍要记得确认对方的真实需求。'
-                    : '建议少用猜测，多用具体问题确认彼此想法。',
-            ),
+            this.loveLanguageLabel,
+            this.formatItem('02', '爱的表达', report.detailAnalysis.loveExpression),
         );
         this.setLabel(
-            this.dateStyleLabel,
-            this.formatItem('03', '最适合约会方式', this.getDateStyle(report)),
+            this.conflictPatternLabel,
+            this.formatItem('03', '沟通与冲突', report.detailAnalysis.communicationConflict),
         );
         this.setLabel(
-            this.warmingSuggestionLabel,
-            this.formatItem('04', '感情升温建议', `${report.suggestions.slice(0, 2).join('；')}。`),
+            this.datingGuideLabel,
+            this.formatItem('04', '相处与约会', report.detailAnalysis.datingRhythm),
         );
         this.setLabel(
-            this.longTermReminderLabel,
-            this.formatItem(
-                '05',
-                `长期相处提醒 ${dimensions.future}%`,
-                dimensions.future >= 80
-                    ? '共同规划未来，并持续为彼此保留高质量相处时间。'
-                    : '先建立稳定边界，再逐步讨论承诺与长期计划。',
-            ),
+            this.longTermGuideLabel,
+            this.formatItem('05', '长期发展', report.detailAnalysis.longTermGrowth),
         );
 
         if (this.dimMask !== null) {
@@ -118,17 +98,6 @@ export class DetailPanel extends Component {
         if (this.dimMask !== null) {
             this.dimMask.active = false;
         }
-    }
-
-    private getDateStyle(report: ReportData): string {
-        const dimensions: ReportData['dimensions'] = report.dimensions;
-        if (dimensions.attraction >= dimensions.life && dimensions.attraction >= dimensions.communication) {
-            return '适合有仪式感的新鲜体验，例如主题展览、夜景散步或双人挑战。';
-        }
-        if (dimensions.life >= dimensions.communication) {
-            return '适合轻松生活型约会，例如一起做饭、逛市集或短途旅行。';
-        }
-        return '适合能够深入交流的约会，例如安静咖啡馆、书店或共同兴趣活动。';
     }
 
     private formatItem(index: string, title: string, body: string): string {
