@@ -1,94 +1,534 @@
 {
   "levels": {
     "high": {
+      "tone": "整体默契基础较好",
       "summary": [
-        "你们之间容易产生自然吸引，默契度较高。",
-        "你们的相处节奏很合拍，感情升温通常比较自然。",
-        "彼此的优点容易被看见，这段关系具有积极的发展潜力。"
+        "你们有自然靠近的默契，也具备把心动沉淀成日常的基础。",
+        "彼此的优点很容易被看见，这段关系往往越认真相处越有确定感。",
+        "喜欢与理解能够同时发生，是这段关系很难得的底色。"
       ],
-      "advantages": [
-        "容易理解彼此",
-        "互动充满火花",
-        "愿意为共同目标投入"
-      ],
-      "risks": [
-        "默契带来的自信可能让你们忽略细节",
-        "表达方式偶尔仍会不同"
-      ],
-      "suggestions": [
-        "保持坦诚沟通",
-        "把心动落实为稳定陪伴",
-        "多站在对方角度考虑"
+      "outlook": [
+        "你们并不缺默契，长期课题是别把理解和回应当成理所当然。",
+        "只要持续回应彼此，这段关系的优势很容易转化为稳定的亲密感。",
+        "关系走得越稳，越要为心动保留表达、约会和共同成长的空间。"
       ]
     },
     "medium": {
+      "tone": "吸引与差异同时存在",
       "summary": [
-        "你们既有吸引彼此的部分，也需要通过相处建立更深的理解。",
-        "这段关系有发展空间，稳定的沟通会决定默契能否持续增长。",
-        "你们的差异能够带来新鲜感，也会考验彼此的包容度。"
+        "你们之间既有真实吸引，也有需要慢慢翻译给彼此的差异。",
+        "这段关系不是自动合拍型，却很可能在认真磨合后形成独有默契。",
+        "差异让你们保持新鲜，也提醒彼此要用对方听得懂的方式去爱。"
       ],
-      "advantages": [
-        "差异能够形成互补",
-        "相处中有持续探索的空间",
-        "磨合后容易建立独特默契"
-      ],
-      "risks": [
-        "处理情绪的节奏可能不同",
-        "容易用自己的标准理解对方"
-      ],
-      "suggestions": [
-        "遇到分歧时先确认彼此需求",
-        "用具体行动代替猜测",
-        "给关系足够的磨合时间"
+      "outlook": [
+        "这段关系能否走远，不取决于没有分歧，而取决于分歧后能否重新靠近。",
+        "只要愿意把猜测换成确认，差异就更可能成为互补，而不是消耗。",
+        "你们需要一点耐心来建立共同节奏，越具体的约定越能带来安全感。"
       ]
     },
     "low": {
+      "tone": "理解差异比急着定论更重要",
       "summary": [
-        "你们的相处方式存在明显差异，但理解差异也可能带来成长。",
-        "这段关系需要更多耐心和清晰边界，不能只依赖最初的吸引。",
-        "彼此的需求并不总在同一频道，主动沟通会格外重要。"
+        "你们的相处语言不完全相同，靠近彼此需要比心动多一点耐心。",
+        "差异在这段关系里比较醒目，但看懂差异也会带来真实成长。",
+        "你们未必会立刻同频，清楚表达需求比努力猜中对方更重要。"
       ],
-      "advantages": [
-        "能够接触不同的思考方式",
-        "关系会推动双方认识自己的真实需求",
-        "建立共识后韧性可能更强"
-      ],
-      "risks": [
-        "核心需求容易被误解",
-        "冲突时可能各自坚持熟悉的处理方式",
-        "长期节奏需要反复协调"
-      ],
-      "suggestions": [
-        "明确表达底线与期待",
-        "不要让沉默代替沟通",
-        "从小的共同目标开始建立信任"
+      "outlook": [
+        "这段关系更需要清晰边界和稳定行动，不必用一时的热度证明是否合适。",
+        "先确认彼此是否愿意一起调整，再讨论谁应该改变，会更接近问题核心。",
+        "关系的机会藏在一次次小而可靠的回应里，而不是勉强忽略真实差异。"
       ]
     }
   },
   "types": {
     "热烈共鸣型": {
-      "description": "两个性格鲜明的人容易产生强烈吸引，互动中常有直接而明亮的火花。"
+      "description": "你们很容易被彼此鲜明的生命力吸引，关系常从一次自然靠近迅速升温。",
+      "focus": "热度与行动互相回应"
     },
     "稳定成长型": {
-      "description": "你们更擅长用可靠的行动积累信任，关系适合在共同规划中稳步成长。"
+      "description": "这段关系的好不一定喧闹，却会在兑现、照顾和共同安排中变得笃定。",
+      "focus": "稳定与兑现逐步累积"
     },
     "灵魂默契型": {
-      "description": "你们在想法和表达上容易同频，精神交流会成为关系的重要黏合剂。"
+      "description": "好聊、好奇和被理解，是你们靠近彼此的捷径，精神交流往往比形式更重要。",
+      "focus": "交流与理解自然同频"
     },
     "互补吸引型": {
-      "description": "彼此不同的特质容易形成吸引，学会欣赏差异后可以产生良好互补。"
+      "description": "彼此不同的气质会带来好奇，真正的吸引来自愿意欣赏对方不同的生活方式。",
+      "focus": "差异带来持续好奇"
     },
     "温柔陪伴型": {
-      "description": "情绪理解和细腻陪伴是这段关系的优势，安全感会让感情更加深入。"
+      "description": "你们很容易察觉彼此细微的情绪，温柔回应会让关系产生深而安静的连接。",
+      "focus": "情绪回应沉淀安全感"
     },
     "磨合成长型": {
-      "description": "吸引与差异同时存在，通过明确沟通和持续磨合能够建立独特默契。"
+      "description": "吸引与差异同时存在，这段关系的魅力在于每次磨合都可能带来新的理解。",
+      "focus": "差异在协商中转成理解"
     },
     "自由探索型": {
-      "description": "你们都需要新鲜感和个人空间，共同探索会让关系保持活力。"
+      "description": "新鲜感、共同发现和彼此空间会让你们持续靠近，关系不必只有一种标准答案。",
+      "focus": "空间与新鲜感彼此兼容"
     },
     "挑战突破型": {
-      "description": "相处习惯存在较大差异，需要耐心确认需求，并建立双方都能接受的边界。"
+      "description": "你们看待亲密关系的方式存在差异，先理解彼此需求，才有机会把拉扯变成成长。",
+      "focus": "不同需求需要清楚翻译"
+    }
+  },
+  "elementDynamics": {
+    "air_air": {
+      "chemistry": "两个风象相遇，话题、好奇心和新想法很容易成为心动开关。",
+      "balance": "长期相处要让想法落到行动，也别用理性讨论跳过真正的情绪。"
+    },
+    "air_earth": {
+      "chemistry": "风象带来变化与想象，土象负责筛选和落地，差异本身就容易引发好奇。",
+      "balance": "要避免一方觉得被限制、另一方觉得不够可靠，最好把空间与承诺说具体。"
+    },
+    "air_fire": {
+      "chemistry": "风象的好奇心遇上火象的行动力，一个点子常常很快就能变成共同体验。",
+      "balance": "热度和变化都来得快，稳定感需要靠及时回应和可执行的约定补上。"
+    },
+    "air_water": {
+      "chemistry": "风象带来新的视角，水象带来细腻感受，彼此会被对方不同的内在世界吸引。",
+      "balance": "一方习惯先想清楚，一方更在意先被理解，沟通时要同时照顾事实与感受。"
+    },
+    "earth_earth": {
+      "chemistry": "两个土象都看重可靠与兑现，吸引常从安心、欣赏和长期可依赖感中生长。",
+      "balance": "稳定之外也要主动制造变化，别让习惯取代表达，让彼此只剩下默认。"
+    },
+    "earth_fire": {
+      "chemistry": "火象带来热度和勇气，土象提供稳定与落点，彼此容易欣赏对方缺少的力量。",
+      "balance": "一个想马上开始，一个需要确认可行，先约定试错范围会比互相催促更有效。"
+    },
+    "earth_water": {
+      "chemistry": "土象的可靠遇上水象的温柔，安全感和被照顾的感觉很容易慢慢累积。",
+      "balance": "别让照顾变成默认分工，也别让情绪只靠猜测，具体表达会让关系更稳。"
+    },
+    "fire_fire": {
+      "chemistry": "两个火象都愿意主动靠近，热烈、直接和共同冒险很容易点燃关系。",
+      "balance": "意见不同时要把输赢放下，给彼此完整表达的空间，才能让热情不变成对抗。"
+    },
+    "fire_water": {
+      "chemistry": "火象的直接热度遇上水象的细腻情绪，强烈反差常会带来明显吸引。",
+      "balance": "一个表达得快，一个感受得深，先确认情绪再推进问题，能减少彼此受伤。"
+    },
+    "water_water": {
+      "chemistry": "两个水象都能感知细微情绪，熟悉感和被理解的体验会让关系快速深入。",
+      "balance": "共情很重要，边界同样重要；把需求说出来，别让两个人一起困在猜测里。"
+    }
+  },
+  "dimensionLabels": {
+    "attraction": "吸引和心动",
+    "communication": "表达和理解",
+    "emotion": "情绪支持",
+    "life": "日常节奏",
+    "future": "长期目标"
+  },
+  "dimensionTexts": {
+    "attraction": {
+      "high": [
+        "吸引维度{score}分，彼此的优点较容易被看见",
+        "吸引维度{score}分，心动与欣赏往往能及时被感知"
+      ],
+      "medium": [
+        "吸引维度{score}分，好感需要靠具体回应继续升温",
+        "吸引维度{score}分，真实互动比强烈开场更重要"
+      ],
+      "low": [
+        "吸引维度{score}分，靠近的速度可能不太相同",
+        "吸引维度{score}分，信任与熟悉感需要慢慢累积"
+      ]
+    },
+    "communication": {
+      "high": [
+        "沟通维度{score}分，想法较容易被对方接住",
+        "沟通维度{score}分，不同观点较容易聊出共识"
+      ],
+      "medium": [
+        "沟通维度{score}分，表达方式需要多一次确认",
+        "沟通维度{score}分，放慢回应会更容易听见重点"
+      ],
+      "low": [
+        "沟通维度{score}分，误会更可能出在表达节奏",
+        "沟通维度{score}分，需求容易被语气或沉默遮住"
+      ]
+    },
+    "emotion": {
+      "high": [
+        "情绪支持{score}分，在意较容易被及时回应",
+        "情绪支持{score}分，安全感容易从回应中累积"
+      ],
+      "medium": [
+        "情绪支持{score}分，安心需要更明确的表达",
+        "情绪支持{score}分，先确认需要再回应会更有效"
+      ],
+      "low": [
+        "情绪支持{score}分，别让猜测替代真实需要",
+        "情绪支持{score}分，感受与回应可能暂时错拍"
+      ]
+    },
+    "life": {
+      "high": [
+        "生活节奏{score}分，共同体验容易自然延续",
+        "生活节奏{score}分，日常配合较容易形成习惯"
+      ],
+      "medium": [
+        "生活节奏{score}分，偏好差异适合轮流照顾",
+        "生活节奏{score}分，具体安排能减少临场消耗"
+      ],
+      "low": [
+        "生活节奏{score}分，时间与空间需要先约定",
+        "生活节奏{score}分，日常习惯需要逐项协调"
+      ]
+    },
+    "future": {
+      "high": [
+        "长期发展{score}分，投入方向较容易形成共识",
+        "长期发展{score}分，共同目标容易转成实际计划"
+      ],
+      "medium": [
+        "长期发展{score}分，承诺适合拆成可执行的小事",
+        "长期发展{score}分，稳定来自持续校准彼此期待"
+      ],
+      "low": [
+        "长期发展{score}分，未来期待需要逐步对齐",
+        "长期发展{score}分，先确认方向再增加承诺更稳妥"
+      ]
+    }
+  },
+  "relationshipInsights": {
+    "summary": {
+      "sameSign": [
+        "{name}×{name}属于{type}，整体{overallScore}分，{levelTone}。相似的{sharedPersonality}让{typeFocus}更明显；{strongestLabel}{strongestScore}分最突出，{weakestLabel}{weakestScore}分提醒你们为同一种反应留出缓冲。"
+      ],
+      "differentSign": [
+        "{maleName}的{malePersonality}遇上{femaleName}的{femalePersonality}，形成{type}，整体{overallScore}分。{elementSummary}；{strongestLabel}{strongestScore}分最突出，{weakestLabel}{weakestScore}分需要耐心对齐。"
+      ]
+    },
+    "strongestBond": {
+      "sameSign": {
+        "attraction": [
+          "{name}都带着{sharedPersonality}和{sharedStrength}，{elementBond}；{dimensionLabel}{dimensionScore}分让好感回应得快，也更愿意主动推进关系。"
+        ],
+        "communication": [
+          "{name}都习惯{maleCommunicationStyle}，共同的{sharedPersonality}让想法更容易被听懂；{dimensionLabel}{dimensionScore}分加上{elementBond}，分歧也能聊成共同决定。"
+        ],
+        "emotion": [
+          "{name}都期待{maleLoveResponse}，{sharedStrength}让彼此更愿意接住在意；{dimensionLabel}{dimensionScore}分加上{elementBond}，安全感容易累积。"
+        ],
+        "life": [
+          "{name}都偏爱{maleDateIdea}，相似的{sharedPersonality}让日常少一些翻译；{dimensionLabel}{dimensionScore}分加上{elementBond}，共同体验容易延续成习惯。"
+        ],
+        "future": [
+          "{name}共同呈现出的{sharedPersonality}与{sharedStrength}，让投入方式容易被理解；{dimensionLabel}{dimensionScore}分加上{elementBond}，目标更容易落成共同计划。"
+        ]
+      },
+      "differentSign": {
+        "attraction": [
+          "{maleName}的{malePersonality}会注意到{femaleName}的{femalePersonality}，反过来也能看见{maleStrength}；{elementBond}，{dimensionLabel}{dimensionScore}分让好奇持续转成主动靠近。"
+        ],
+        "communication": [
+          "{maleName}的{malePersonality}常用{maleCommunicationStyle}，{femaleName}的{femalePersonality}以{femaleCommunicationStyle}补充；{elementBond}，{dimensionLabel}{dimensionScore}分让想法更易聊成共同语言。"
+        ],
+        "emotion": [
+          "{maleName}的{malePersonality}需要{maleLoveResponse}，{femaleName}的{femalePersonality}重视{femaleLoveResponse}；{elementBond}，{dimensionLabel}{dimensionScore}分让{maleStrength}与{femaleStrength}更容易接住在意。"
+        ],
+        "life": [
+          "{maleName}的{malePersonality}与{femaleName}的{femalePersonality}能轮流带动日常；{elementBond}，{dimensionLabel}{dimensionScore}分让不同偏好更容易变成共同体验。"
+        ],
+        "future": [
+          "{maleName}的{malePersonality}与{femaleName}的{femalePersonality}把不同视角带进计划；{elementBond}，{dimensionLabel}{dimensionScore}分让投入更容易形成共同方向。"
+        ]
+      }
+    },
+    "biggestChallenge": {
+      "sameSign": {
+        "attraction": [
+          "{name}都常{maleCommunicationStyle}、要{maleLoveResponse}；{maleWeakness}被同时放大时，{dimensionLabel}{dimensionScore}分下可能一起等对方确认，心动节奏会短暂错位。"
+        ],
+        "communication": [
+          "{name}都常{maleCommunicationStyle}、要{maleLoveResponse}；{maleWeakness}被同时放大时，{dimensionLabel}{dimensionScore}分下容易一起抢答或沉默，忽略真正需要被理解的部分。"
+        ],
+        "emotion": [
+          "{name}都常{maleCommunicationStyle}、要{maleLoveResponse}；{maleWeakness}被同时放大时，{dimensionLabel}{dimensionScore}分下可能把同一种不安互相放大，真实需要反而没说出口。"
+        ],
+        "life": [
+          "{name}都常{maleCommunicationStyle}、要{maleLoveResponse}；{maleWeakness}被同时放大时，{dimensionLabel}{dimensionScore}分下容易一起坚持熟悉安排，让时间与空间少了缓冲。"
+        ],
+        "future": [
+          "{name}都常{maleCommunicationStyle}、要{maleLoveResponse}；{maleWeakness}被同时放大时，{dimensionLabel}{dimensionScore}分下可能按相同判断推进，却漏掉承诺细节复核。"
+        ]
+      },
+      "differentSign": {
+        "attraction": [
+          "{maleName}常{maleCommunicationStyle}、要{maleLoveResponse}，{femaleName}常{femaleCommunicationStyle}、要{femaleLoveResponse}；{maleWeakness}遇上{femaleWeakness}，{dimensionLabel}{dimensionScore}分下热度与确认容易错位。"
+        ],
+        "communication": [
+          "{maleName}常{maleCommunicationStyle}、要{maleLoveResponse}，{femaleName}常{femaleCommunicationStyle}、要{femaleLoveResponse}；{maleWeakness}遇上{femaleWeakness}，{dimensionLabel}{dimensionScore}分下需求易被语气或沉默遮住。"
+        ],
+        "emotion": [
+          "{maleName}常{maleCommunicationStyle}、要{maleLoveResponse}，{femaleName}常{femaleCommunicationStyle}、要{femaleLoveResponse}；{maleWeakness}遇上{femaleWeakness}，{dimensionLabel}{dimensionScore}分下容易一个没说清、一个没接住。"
+        ],
+        "life": [
+          "{maleName}常{maleCommunicationStyle}、要{maleLoveResponse}，{femaleName}常{femaleCommunicationStyle}、要{femaleLoveResponse}；{maleWeakness}遇上{femaleWeakness}，{dimensionLabel}{dimensionScore}分下时间、空间和计划容易拉扯。"
+        ],
+        "future": [
+          "{maleName}常{maleCommunicationStyle}、要{maleLoveResponse}，{femaleName}常{femaleCommunicationStyle}、要{femaleLoveResponse}；{maleWeakness}遇上{femaleWeakness}，{dimensionLabel}{dimensionScore}分下承诺与未来想象可能不同拍。"
+        ]
+      }
+    },
+    "firstAction": {
+      "attraction": [
+        "这周各说出一个具体欣赏，再安排一次由较慢热一方决定节奏的共同体验。",
+        "约一个不被手机打断的小时，各自提出一件想和对方一起尝试的新鲜小事。"
+      ],
+      "communication": [
+        "发生误会时先完整复述对方的意思，得到确认后再表达自己的具体立场。",
+        "下次分歧时先暂停十分钟，再轮流说清事实、感受和一个具体需求。"
+      ],
+      "emotion": [
+        "情绪出现时先问“你想被倾听，还是一起想办法”，确认后再回应。",
+        "今晚两个人各说出一件最近需要的支持，只讨论能立刻做到的一项行动。"
+      ],
+      "life": [
+        "计划下一次共同约会时先确认时间和预算，再由两个人轮流决定活动。",
+        "把独处、约会和临时变动各定一条具体规则，下周实践后再一起调整。"
+      ],
+      "future": [
+        "找一个不被手机打断的半小时，各写下一项三个月内愿意兑现的小承诺。",
+        "先对齐未来三个月的一件共同目标，再分别说清自己能承担的行动。"
+      ]
+    }
+  },
+  "detailAnalysis": {
+    "attractionSource": {
+      "sameSign": [
+        "{name}都带着{sharedPersonality}和{sharedStrength}，{typeFocus}很容易被彼此感知。{dimensionReading}；{elementBond}。可以每周说出一次具体欣赏，让熟悉感里持续出现新的心动线索。"
+      ],
+      "differentSign": [
+        "{maleName}的{malePersonality}容易注意到{femaleName}的{femalePersonality}，{femaleName}也会回应{maleName}的{maleStrength}。{dimensionReading}；{elementBond}。把好奇落实成一次共同体验，会让吸引更具体。"
+      ]
+    },
+    "loveExpression": {
+      "sameSign": [
+        "{name}都带着{sharedPersonality}，常用{maleLoveExpression}表达在乎，也期待{maleLoveResponse}。{dimensionReading}；相似需求不等于自动读懂，建议每周主动确认一次对方最近最需要哪种回应。"
+      ],
+      "differentSign": [
+        "{maleName}带着{malePersonality}，常用{maleLoveExpression}表达在乎；{femaleName}更偏向{femaleLoveExpression}，期待{femaleLoveResponse}。{dimensionReading}。建议各自说清一种最能感受到在乎的行动。"
+      ]
+    },
+    "communicationConflict": {
+      "sameSign": [
+        "{name}都有{sharedPersonality}的一面，沟通时常{maleCommunicationStyle}；当{maleWeakness}被同时放大，可能一起抢答或一起沉默。{dimensionReading}。情绪升高先暂停十分钟，再轮流说事实、感受和需求。"
+      ],
+      "differentSign": [
+        "{maleName}{malePersonality}，常{maleCommunicationStyle}；{femaleName}常{femaleCommunicationStyle}。当{maleWeakness}遇上{femaleWeakness}，误会容易从速度或语气产生。{dimensionReading}。先复述对方需求，再表达自己的立场。"
+      ]
+    },
+    "datingRhythm": {
+      "sameSign": [
+        "{name}都偏爱{maleDateIdea}，{sharedPersonality}让约会更需要共同参与。{dimensionReading}；{elementDateBlend}。建议轮流决定活动，并在出发前确认时间、预算和是否需要独处。"
+      ],
+      "differentSign": [
+        "{maleName}更{malePersonality}，适合{maleDateIdea}；{femaleName}更{femalePersonality}，也会享受{femaleDateIdea}。{dimensionReading}；{elementDateBlend}。把两种偏好交替安排，每次由一人做主。"
+      ]
+    },
+    "longTermGrowth": {
+      "sameSign": [
+        "{name}共同呈现出的{sharedPersonality}与{sharedStrength}有助于建立长期默契，但{maleWeakness}也可能被同时放大。{dimensionReading}；{elementGrowth}。建议每月对齐一次未来三个月的计划，并围绕{weakestLabel}定下一条可兑现的约定。"
+      ],
+      "differentSign": [
+        "{maleName}的{malePersonality}和{maleStrength}，配合{femaleName}的{femalePersonality}和{femaleStrength}，能为长期关系提供不同支点。{dimensionReading}；{elementGrowth}。建议每月对齐一次短期计划，并围绕{weakestLabel}形成一条双方都能兑现的约定。"
+      ]
+    }
+  },
+  "elementRelations": {
+    "air_air": {
+      "summary": "风象同频让交流与好奇自然流动",
+      "bond": "风象同频放大交流与好奇",
+      "challenge": "都容易停在想法，忽略情绪落点",
+      "growth": "让想法落到行动，也为感受留出位置",
+      "dateBlend": "适合把新点子变成轻松的共同探索"
+    },
+    "air_earth": {
+      "summary": "风象打开可能，土象帮助想法落地",
+      "bond": "风象打开可能，土象帮助落地",
+      "challenge": "空间需求与稳定需求需要说具体",
+      "growth": "用可调整的计划同时照顾自由与可靠",
+      "dateBlend": "适合在新鲜体验与稳定安排之间轮换"
+    },
+    "air_fire": {
+      "summary": "风象的点子容易被火象迅速带进行动",
+      "bond": "风象点燃想法，火象迅速行动",
+      "challenge": "节奏过快时容易少一次情绪确认",
+      "growth": "在行动前补一次确认，在自由中保留承诺",
+      "dateBlend": "适合有变化、有互动也能即时分享的活动"
+    },
+    "air_water": {
+      "summary": "风象拓展视角，水象补上细腻感受",
+      "bond": "风象拓展视角，水象补上感受",
+      "challenge": "理性解释与情绪理解可能暂时错拍",
+      "growth": "先回应感受，再用讨论找到具体办法",
+      "dateBlend": "适合兼顾新鲜话题与安静陪伴的安排"
+    },
+    "earth_earth": {
+      "summary": "土象同频重视稳定、责任与兑现",
+      "bond": "土象同频重视稳定与兑现",
+      "challenge": "都守住习惯时，变化会显得有压力",
+      "growth": "在可靠日常里主动加入表达和小变化",
+      "dateBlend": "适合有计划、能慢慢体验细节的活动"
+    },
+    "earth_fire": {
+      "summary": "火象推动节奏，土象负责稳住落点",
+      "bond": "火象推动节奏，土象稳住落点",
+      "challenge": "行动速度与确认过程需要互相留时间",
+      "growth": "先约定试错范围，再把热情转成稳定行动",
+      "dateBlend": "适合一半即兴、一半提前安排的约会"
+    },
+    "earth_water": {
+      "summary": "土象给出可靠，水象营造情绪温度",
+      "bond": "土象给出可靠，水象营造温度",
+      "challenge": "照顾若靠默认分工，需求容易被忽略",
+      "growth": "把照顾、边界和分工都说成具体行动",
+      "dateBlend": "适合舒缓、重体验也有准备感的活动"
+    },
+    "fire_fire": {
+      "summary": "火象同频让热情和行动彼此加速",
+      "bond": "火象同频放大热情与行动",
+      "challenge": "都想推进时，表达空间容易被压缩",
+      "growth": "保留行动力，也建立暂停与轮流表达机制",
+      "dateBlend": "适合共同挑战和能及时分享反馈的活动"
+    },
+    "fire_water": {
+      "summary": "火象带来热度，水象补充细腻感受",
+      "bond": "火象带来热度，水象补充细腻",
+      "challenge": "一个表达快，一个感受深，容易错过确认",
+      "growth": "先确认情绪，再一起决定下一步行动",
+      "dateBlend": "适合把主动探索与温柔陪伴交替安排"
+    },
+    "water_water": {
+      "summary": "水象同频容易察觉细微情绪变化",
+      "bond": "水象同频容易感知细微情绪",
+      "challenge": "一起多想时，猜测可能代替直接提问",
+      "growth": "保留共情，也把需求、边界和事实说清楚",
+      "dateBlend": "适合安静、有氛围并能深度交流的活动"
+    }
+  },
+  "traitProfiles": {
+    "communication": [
+      {
+        "keywords": ["情绪氛围", "没有说出口", "表达含蓄", "富有情感"],
+        "style": "按感受表达",
+        "risk": "把期待留在暗示里",
+        "action": "把感受改成具体需求"
+      },
+      {
+        "keywords": ["不轻易表露", "敏锐观察"],
+        "style": "观察后表达",
+        "risk": "沉默被理解成疏离",
+        "action": "说明自己需要思考"
+      },
+      {
+        "keywords": ["倾听和协调", "避免激烈冲突"],
+        "style": "温和协调",
+        "risk": "为和平延后分歧",
+        "action": "及时说出不同意见"
+      },
+      {
+        "keywords": ["表达理性", "彼此边界", "逻辑清晰", "具体事实", "克制务实", "现实问题"],
+        "style": "理性讨论",
+        "risk": "只谈方案、跳过感受",
+        "action": "先回应感受再谈办法"
+      },
+      {
+        "keywords": ["谨慎而踏实", "建立信任"],
+        "style": "谨慎确认",
+        "risk": "确认太久、错过回应",
+        "action": "说明需要的确认时间"
+      },
+      {
+        "keywords": ["表达直接", "鲜明坦率", "坦率幽默"],
+        "style": "直接表达",
+        "risk": "回应过快、语气变硬",
+        "action": "先听完再回应"
+      },
+      {
+        "keywords": ["思维跳跃", "轻松的方式", "讨论新观点"],
+        "style": "轻松发散",
+        "risk": "话题跳快、重点散开",
+        "action": "一次只确认一个问题"
+      }
+    ],
+    "loveStyle": [
+      {
+        "keywords": ["主动表达感情", "大方表达爱意"],
+        "expression": "主动表态和行动",
+        "response": "及时回应",
+        "dateIdea": "运动挑战或短途探索"
+      },
+      {
+        "keywords": ["稳定陪伴", "实际行动", "长期承诺", "解决问题", "责任、规划", "长期投入"],
+        "expression": "稳定陪伴和兑现",
+        "response": "稳定兑现",
+        "dateIdea": "一起做饭、散步或逛展"
+      },
+      {
+        "keywords": ["深度信任", "情感忠诚"],
+        "expression": "认真投入和信任",
+        "response": "深度信任",
+        "dateIdea": "安静长谈或共同完成项目"
+      },
+      {
+        "keywords": ["平等", "彼此尊重"],
+        "expression": "平等协商和浪漫表达",
+        "response": "平等尊重",
+        "dateIdea": "审美体验或双人合作活动"
+      },
+      {
+        "keywords": ["照顾", "归属感", "浪漫氛围", "情绪共鸣", "温柔的陪伴"],
+        "expression": "照顾和情绪陪伴",
+        "response": "细腻陪伴",
+        "dateIdea": "看电影、散步或一起做饭"
+      },
+      {
+        "keywords": ["有趣", "新鲜", "空间", "共同体验", "精神共鸣", "彼此独立", "交流的朋友"],
+        "expression": "交流和共同探索",
+        "response": "有趣交流",
+        "dateIdea": "主题展、桌游或新店体验"
+      }
+    ],
+    "defaultCommunication": {
+      "keywords": ["__default__"],
+      "style": "清楚表达",
+      "risk": "表达与理解暂时错拍",
+      "action": "先确认再回应"
+    },
+    "defaultLoveStyle": {
+      "keywords": ["__default__"],
+      "expression": "陪伴和具体行动",
+      "response": "明确回应",
+      "dateIdea": "轻松交谈或共同体验"
+    }
+  },
+  "fallbacks": {
+    "trait": "认真投入",
+    "weakness": "反应节奏偶尔不同",
+    "typeDescription": "这组搭配有自己的相处节奏，真实互动会让彼此更了解对方。",
+    "typeFocus": "理解与回应逐步累积",
+    "summary": "{maleName}与{femaleName}有自己的相处节奏，整体{overallScore}分；{strongestLabel}是当前连接点，{weakestLabel}需要通过具体确认慢慢对齐。",
+    "strongestBond": "{maleName}的{maleStrength}与{femaleName}的{femaleStrength}能形成支持，具体回应会让这份优势持续落到相处中。",
+    "biggestChallenge": "{maleName}与{femaleName}在{weakestLabel}上的节奏可能不同，压力出现时要留意{maleWeakness}与{femaleWeakness}互相放大。",
+    "firstAction": "下次出现分歧时，先轮流说清事实、感受和一个具体需求。",
+    "attractionSource": "{maleName}的{malePersonality}与{femaleName}的{femalePersonality}会带来好奇。{dimensionReading}；可以用一次共同体验和一句具体欣赏，让好感有清楚落点。",
+    "loveExpression": "{maleName}常用{maleLoveExpression}表达在乎，{femaleName}更习惯{femaleLoveExpression}。{dimensionReading}；建议各自说清最需要的一种回应。",
+    "communicationConflict": "{maleName}常{maleCommunicationStyle}，{femaleName}常{femaleCommunicationStyle}。{dimensionReading}；出现误会时先复述对方需求，再表达自己的立场。",
+    "datingRhythm": "{maleName}适合{maleDateIdea}，{femaleName}更享受{femaleDateIdea}。{dimensionReading}；建议轮流决定活动，并提前确认时间和预算。",
+    "longTermGrowth": "{maleName}的{maleStrength}与{femaleName}的{femaleStrength}能支撑长期建设。{dimensionReading}；建议每月对齐一次短期计划，并围绕{weakestLabel}形成可兑现的约定。",
+    "elementRelation": {
+      "summary": "不同气质会带来好奇，也需要清楚翻译需求",
+      "bond": "不同气质让彼此看见新的可能",
+      "challenge": "节奏差异需要通过具体确认来协调",
+      "growth": "把期待说清楚，并为调整保留空间",
+      "dateBlend": "适合轮流体验彼此喜欢的活动"
     }
   }
 }
